@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnMaior = new Button();
+            btnMaiorMenor = new Button();
             lblNum3 = new Label();
             lblNum2 = new Label();
             lblNum1 = new Label();
@@ -37,14 +37,15 @@
             txtNum1 = new TextBox();
             SuspendLayout();
             // 
-            // btnMaior
+            // btnMaiorMenor
             // 
-            btnMaior.Location = new Point(154, 134);
-            btnMaior.Name = "btnMaior";
-            btnMaior.Size = new Size(75, 23);
-            btnMaior.TabIndex = 13;
-            btnMaior.Text = "Maior";
-            btnMaior.UseVisualStyleBackColor = true;
+            btnMaiorMenor.Location = new Point(90, 134);
+            btnMaiorMenor.Name = "btnMaiorMenor";
+            btnMaiorMenor.Size = new Size(139, 23);
+            btnMaiorMenor.TabIndex = 13;
+            btnMaiorMenor.Text = "Mostrar Maior e Menor";
+            btnMaiorMenor.UseVisualStyleBackColor = true;
+            btnMaiorMenor.Click += btnMaiorMenor_Click;
             // 
             // lblNum3
             // 
@@ -99,7 +100,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(476, 334);
-            Controls.Add(btnMaior);
+            Controls.Add(btnMaiorMenor);
             Controls.Add(lblNum3);
             Controls.Add(lblNum2);
             Controls.Add(lblNum1);
@@ -114,7 +115,7 @@
 
         #endregion
 
-        private Button btnMaior;
+        private Button btnMaiorMenor;
         private Label lblNum3;
         private Label lblNum2;
         private Label lblNum1;
