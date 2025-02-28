@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             txtNum1 = new TextBox();
             txtNum2 = new TextBox();
             txtNum3 = new TextBox();
@@ -35,6 +36,7 @@
             lblNum2 = new Label();
             lblNum3 = new Label();
             btnMaior = new Button();
+            notifyIcon1 = new NotifyIcon(components);
             SuspendLayout();
             // 
             // txtNum1
@@ -95,6 +97,11 @@
             btnMaior.UseVisualStyleBackColor = true;
             btnMaior.Click += btnMaior_Click;
             // 
+            // notifyIcon1
+            // 
+            notifyIcon1.Text = "notifyIcon1";
+            notifyIcon1.Visible = true;
+            // 
             // FormEx4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -122,5 +129,6 @@
         private Label lblNum2;
         private Label lblNum3;
         private Button btnMaior;
+        private NotifyIcon notifyIcon1;
     }
 }
