@@ -52,10 +52,15 @@ namespace WFInicial
             FormEx6 form = new FormEx6();
             form.ShowDialog();
         }
-
-        private void btnMenu_Click(object sender, EventArgs e)
+        private void btnEx7_Click(object sender, EventArgs e)
         {
             FormEx7 form = new FormEx7();
+            form.ShowDialog();
+        }
+
+        private void btnEx8_Click(object sender, EventArgs e)
+        {
+            FormEx8 form = new FormEx8();
             form.ShowDialog();
         }
     }
